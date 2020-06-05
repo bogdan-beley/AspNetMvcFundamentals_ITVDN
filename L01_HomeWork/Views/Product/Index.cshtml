@@ -1,0 +1,28 @@
+﻿
+@model IEnumerable<L01_HomeWork.Models.Product>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Product</title>
+</head>
+<body>
+        @foreach (var item in Model)
+        {
+            <tabe>
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Price</td>
+                    <td>@item.Description</td>
+                </tr>
+            </tabe>
+        }
+</body>
+</html>
