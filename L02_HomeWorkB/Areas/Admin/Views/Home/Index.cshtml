@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h2>/Admin/Home/Index View</h2>
+
+        @Html.ActionLink("/Admin/Products/Index", "Index", "Products")<br />
+        @Html.ActionLink("/Admin/Products/Create", "Create", "Products")<br />
+        @Html.ActionLink("/Admin/Products/Delete", "Delete", "Products")<br />
+        <br />
+        @Html.RouteLink("USER PANEL", new { controller = "Home", action = "Index", area = "" })
+
+    </div>
+</body>
+</html>
