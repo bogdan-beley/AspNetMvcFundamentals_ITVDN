@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        Routing MVC:
+        <br />
+        /Home/Index/
+        <br />
+        <h2>ViewBag Variable: @ViewBag.Variable</h2>
+
+        <a href="/home/index/">/home/index</a><br />
+        <a href="/home/index/124">/home/index/124</a><br />
+        <a href="/home/customvariable/222">/home/customvariable/222</a>
+        <br />
+        <a href="/home/segmentvariables/2/3">SegmentVariables: 2 + 3 (/Home/SegmentVariables/2/3)</a><br/>
+        <a href="/home/segmentvariables/7/3">SegmentVariables: 7 + 3 (/Home/SegmentVariables/7/3)</a>
+        <br/>
+        @Url.Action("Index", "Home", new { id = "123"})
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CatchAllSegments</title>
+</head>
+<body>
+    <div>
+        Id = @ViewBag.Id
+        CatchAll = @ViewBag.CatchAll
+        <br/>
+        <a href="/home/index/">/home/index</a><br />
+        <a href="/home/index/124">/home/index/124</a><br />
+        <a href="/Home/CatchAllSegments/124/first/second/third">/Home/CatchAllSegments/124/first/second/third</a><br />
+    </div>
+</body>
+</html>
