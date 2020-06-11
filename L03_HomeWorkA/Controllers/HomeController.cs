@@ -18,12 +18,12 @@ namespace L03_HomeWorkA.Controllers
             return View();
         }
 
-        public ActionResult Index()
+        public ActionResult Services()
         {
             return View();
         }
 
-        public ActionResult Index()
+        public ActionResult About()
         {
             return View();
         }
