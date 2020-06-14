@@ -1,0 +1,18 @@
+﻿@model IEnumerable<L03_HomeWorkB.Models.Product>
+
+@{
+    ViewBag.Title = "Products";
+}
+
+<h2>Products</h2>
+
+<div>
+    @foreach (var item in Model)
+    {
+        @Html.Partial("_ProductList", item)<br/>
+    }
+</div>
+<div>
+    @Html.Action("ProductTable", new { numberOfRows = 30 })
+</div>
+
