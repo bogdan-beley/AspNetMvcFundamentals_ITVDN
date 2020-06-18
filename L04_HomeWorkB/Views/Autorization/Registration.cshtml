@@ -1,0 +1,25 @@
+﻿
+@model List<L04_HomeWorkB.Models.Registration>
+
+@{
+    ViewBag.Title = "Registration";
+}
+
+<h2>Registration</h2>
+
+@using (Html.BeginForm("Registration", "Autorization"))
+{
+    <label>Логін:</label>
+    @Html.TextBox("username")
+    <br />
+    <label>Пароль:</label>
+    @Html.TextBox("password")
+    <br />
+    <label>Підтвердження паролю:</label>
+    @Html.TextBox("passconfirm")
+    <br />
+    <label>Email:</label>
+    @Html.TextBox("email")
+    <br/>
+    <input type="submit" name="registerform" value="Registration">
+}
