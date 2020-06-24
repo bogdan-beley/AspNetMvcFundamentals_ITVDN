@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title | My Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="margin: 10px">
+    <div style="text-align:right">@Html.ActionLink("Логін", "Index", "Login") | @Html.ActionLink("Реєстрація", "Index", "Registration")</div>
+    <div>
+        <ul>
+            <li>@Html.ActionLink("Домашня", "Index", "Home")</li>
+            <li>@Html.ActionLink("Продукти", "Index", "Products")</li>
+        </ul>
+    </div>
+    <div>
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,18 @@
+﻿using L05_HomeWorkB.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace L05_HomeWorkB.Controllers
+{
+    public class ProductsController : Controller
+    {
+        // GET: Products
+        public ActionResult Index()
+        {
+            return View(ProductsDatabase.Products);
+        }
+    }
+}

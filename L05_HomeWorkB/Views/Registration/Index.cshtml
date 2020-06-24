@@ -1,0 +1,44 @@
+﻿
+@model L05_HomeWorkB.Models.RegistrationModel
+
+@{
+    ViewBag.Title = "Registration";
+}
+
+<h2>Registration</h2>
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>Registration Form</legend>
+    
+        <div>
+            <label>ID</label>
+            @Html.TextBoxFor(m => m.Id)
+        </div>
+        <div>
+            <label>Логін:</label>
+            @Html.TextBoxFor(m => m.Login)
+        </div>
+        <div>
+            <label>Пароль:</label>
+            @Html.TextBoxFor(m => m.Password)
+        </div>
+        <div>
+            <label>Підтвердження пароль:</label>
+            @Html.TextBoxFor(m => m.ConfirmPass)
+        </div>
+        <div>
+            <label>Email:</label>
+            @Html.TextBoxFor(m => m.Email)
+        </div>
+
+        <input type="submit" name="button" value="Зареєструватись" />
+    </fieldset>
+}
+
+ID: @ViewBag.Id<br />
+Login: @ViewBag.Login<br />
+Password: @ViewBag.Password<br />
+ConfirmPass: @ViewBag.ConfirmPass<br />
+Email: @ViewBag.Email

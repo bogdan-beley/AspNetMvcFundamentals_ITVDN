@@ -1,0 +1,12 @@
+﻿@model IEnumerable<L05_HomeWorkB.Models.Product>
+
+@{
+    ViewBag.Title = "Products List";
+
+    var grid = new WebGrid(source: Model);
+}
+
+<h2>Products List</h2>
+
+@grid.GetHtml()
+
