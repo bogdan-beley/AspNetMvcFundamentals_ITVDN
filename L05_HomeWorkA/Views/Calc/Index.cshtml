@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm())
+{
+    <label>Number1</label>
+    @Html.TextBox("number1")
+    <br />
+    <label>Number2</label>
+    @Html.TextBox("number2")
+    <br />
+    <br />
+    <input type="submit" name="calcMethod" value="+" />
+    <input type="submit" name="calcMethod" value="-" />
+    <input type="submit" name="calcMethod" value="*" />
+    <input type="submit" name="calcMethod" value="/" />
+}
+<br />
+Result: @ViewBag.result
+
