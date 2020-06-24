@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "List Elements";
+}
+
+<h2>List Elements</h2>
+
+@using (Html.BeginForm())
+{
+    <h4>DropDown List</h4>
+    @Html.DropDownList("list1",
+                        new SelectList(new[] { "item1", "item2", "item3" }))
+
+    <br />
+
+    <h4>List Box</h4>
+    @Html.ListBox("list2", 
+                   new MultiSelectList(new[] { "A", "B", "C", "D" }), new { style = "width:100px" });
+
+    <br />
+
+    <input type="submit" name="button" value="Відправити" />
+}
+
+<br />
+
+<p>DropDown List: @ViewBag.Selected1</p>
+<p>List Box: @ViewBag.Selected2</p>

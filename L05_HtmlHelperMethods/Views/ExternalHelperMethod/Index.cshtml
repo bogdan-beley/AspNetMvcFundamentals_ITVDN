@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "External Helper Method";
+}
+
+<h2>External Helper Method</h2>
+
+<h4>External list of Days:</h4>
+@Html.UnorderedList(ViewBag.Days as string[])

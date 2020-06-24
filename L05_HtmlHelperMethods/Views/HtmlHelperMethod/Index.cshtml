@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "HTML Helper Method";
+}
+
+<h2>HTML Helper Method</h2>
+
+@helper CreateList(string[] items)
+{
+    <ul>
+        @foreach (var item in items)
+        {
+            <li>@item</li>
+        }
+    </ul>   
+}
+
+<h4>List of fruits:</h4>
+@CreateList(ViewBag.Fruits)
+
+<h4>List of Days:</h4>
+@CreateList(ViewBag.Days)
+
+<h4>External list of Days:</h4>
+@Html.UnorderedList(ViewBag.Days as string[])
+
+

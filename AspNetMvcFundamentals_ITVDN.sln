@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L04_HomeWorkA", "L04_HomeWo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L04_HomeWorkB", "L04_HomeWorkB\L04_HomeWorkB.csproj", "{41E23F19-C64C-4723-BE41-DDE21623828D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L05_HtmlHelperMethods", "L05_HtmlHelperMethods\L05_HtmlHelperMethods.csproj", "{3A19E3DB-89A2-4FCC-9220-6C93F430E967}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{41E23F19-C64C-4723-BE41-DDE21623828D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41E23F19-C64C-4723-BE41-DDE21623828D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41E23F19-C64C-4723-BE41-DDE21623828D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A19E3DB-89A2-4FCC-9220-6C93F430E967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A19E3DB-89A2-4FCC-9220-6C93F430E967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A19E3DB-89A2-4FCC-9220-6C93F430E967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A19E3DB-89A2-4FCC-9220-6C93F430E967}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My App</title>
+    @Styles.Render("~/Content/css")
+    @RenderSection("styles", required: false)
+</head>
+<body>
+    <div>
+        <ul>
+            <li>@Html.ActionLink("Домашня", "Index", "Home")</li>
+            <li>@Html.ActionLink("HTML Helper Method", "Index", "HtmlHelperMethod")</li>
+            <li>@Html.ActionLink("External Helper Method", "Index", "ExternalHelperMethod")</li>
+            <li>@Html.ActionLink("HTML Form Sample - Журнал повернень", "Index", "HtmlFormSample")</li>
+            <li>@Html.ActionLink("List Elements", "Index", "ListElements")</li>
+            <li>@Html.ActionLink("Web Grid", "Index", "WebGrid")</li>
+        </ul>
+    </div>
+
+    @RenderBody()
+
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+</body>
+</html>
