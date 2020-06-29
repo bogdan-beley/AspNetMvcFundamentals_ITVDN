@@ -1,0 +1,29 @@
+﻿@model L06_TemplatedHelperMethods.Models.Product
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>EditorFor and DisplayFor</h2>
+
+@Html.LabelFor(x => x.ProductId)
+@Html.DisplayFor(x => x.ProductId)
+<br />
+
+@Html.LabelFor(x => x.Name)
+@Html.EditorFor(x => x.Name)
+<br />
+
+@Html.LabelFor(x => x.Price)
+@Html.EditorFor(x => x.Price)
+<br />
+
+@Html.LabelFor(x => x.IsAvailable)
+@Html.EditorFor(x => x.IsAvailable)
+
+<h2>EditorForModel and DisplayForModel</h2>
+
+@Html.EditorForModel()
+<br />
+
+@Html.DisplayForModel()

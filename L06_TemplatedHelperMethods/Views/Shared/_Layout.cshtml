@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My App</title>
+    @Styles.Render("~/Content/css")
+    @RenderSection("styles", required: false)
+</head>
+<body>
+    <div>
+        <ul>
+            <li>@Html.ActionLink("Домашня", "Index", "Home")</li>
+            <li>@Html.ActionLink("Model Metadata", "Index", "Customer")</li>
+            <li>@Html.ActionLink("Special Template Sample", "Index", "Person")</li>
+            <li>@Html.ActionLink("Entity Framework Sample", "Index", "Products")</li>
+        </ul>
+        <hr />
+        <ul>
+            <li>@Html.ActionLink("Продукти", "Index", "Products")</li>
+            <li>@Html.ActionLink("Покупці", "Index", "Customers")</li>
+            <li>@Html.ActionLink("Замовлення", "Index", "Orders")</li>
+        </ul>
+    </div>
+
+    @RenderBody()
+
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+</body>
+</html>

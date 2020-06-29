@@ -1,0 +1,16 @@
+﻿
+@model L06_HomeWorkA.Models.User
+
+@{
+    ViewBag.Title = "Створити користувача";
+}
+
+<h2>Створити нового користувача</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+
+    <input type="submit" name="create" value="Створити" />
+}
+

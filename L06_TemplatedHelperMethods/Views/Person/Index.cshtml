@@ -1,0 +1,19 @@
+﻿
+@model L06_TemplatedHelperMethods.Models.Person
+
+@{
+    ViewBag.Title = "Special Template Sample";
+}
+
+<h2>Special Template Sample</h2>
+
+@Html.LabelFor(x => x.Id)
+@Html.EditorFor(x => x.Id)
+<br />
+
+@Html.LabelFor(x => x.FullName)
+@Html.EditorFor(x => x.FullName)
+<br />
+
+@Html.LabelFor(x => x.Role)
+@Html.EditorFor(x => x.Role, "RoleTemplate")
