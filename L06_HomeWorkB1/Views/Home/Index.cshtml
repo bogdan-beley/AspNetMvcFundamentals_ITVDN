@@ -1,0 +1,18 @@
+﻿@model L06_HomeWorkB1.Models.PhoneNumber
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.EditorFor(x => x.CountryCode)
+    @Html.EditorFor(x => x.CityCode)
+    @Html.EditorFor(x => x.Number)
+
+    <input type="submit" name="create" value="Створити" />
+}
+
+@ViewBag.Number

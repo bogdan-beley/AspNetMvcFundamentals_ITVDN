@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L06_TemplatedHelperMethods"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L06_HomeWorkA", "L06_HomeWorkA\L06_HomeWorkA.csproj", "{BD59A63D-28BC-4068-A971-65C71BC689EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L06_HomeWorkB1", "L06_HomeWorkB1\L06_HomeWorkB1.csproj", "{EC06216B-5251-4493-9928-A34084E9C863}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{BD59A63D-28BC-4068-A971-65C71BC689EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD59A63D-28BC-4068-A971-65C71BC689EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD59A63D-28BC-4068-A971-65C71BC689EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC06216B-5251-4493-9928-A34084E9C863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC06216B-5251-4493-9928-A34084E9C863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC06216B-5251-4493-9928-A34084E9C863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC06216B-5251-4493-9928-A34084E9C863}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
