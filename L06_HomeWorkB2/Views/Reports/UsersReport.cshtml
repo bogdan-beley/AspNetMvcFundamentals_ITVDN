@@ -1,0 +1,15 @@
+﻿@model L06_HomeWorkB2.Models.Report
+
+@{
+    ViewBag.Title = "Продажі по клієнтах";
+}
+
+<h2>Продажі по клієнтах</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(x => x.Search)
+    @Html.EditorFor(x => x.Search)
+
+    <input type="submit" name="filter" value="Відобразити" />
+}
