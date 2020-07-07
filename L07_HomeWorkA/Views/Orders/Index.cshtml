@@ -1,0 +1,39 @@
+﻿@model L07_HomeWorkA.Models.Order
+
+@{
+    ViewBag.Title = "Orders";
+}
+
+<h2>Orders</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(x => x.Name)
+        @Html.EditorFor(x => x.Name)
+        @Html.ValidationMessageFor(x => x.Name)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Address)
+        @Html.EditorFor(x => x.Address)
+        @Html.ValidationMessageFor(x => x.Address)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Email)
+        @Html.EditorFor(x => x.Email)
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Date)
+        @Html.EditorFor(x => x.Date)
+        @Html.ValidationMessageFor(x => x.Date)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.TermsAccepted)
+        @Html.EditorFor(x => x.TermsAccepted)
+        @Html.ValidationMessageFor(x => x.TermsAccepted)
+    </div>
+
+    <input type="submit" name="Create" value="Створити замовлення" />
+}
+
