@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Відправити файл";
+}
+
+<h2>Відправити файл</h2>
+
+
+    <form action="@Url.Action("Upload")" method="post" enctype="multipart/form-data">
+        Файл: <input type="file" name="file" value="" />
+        <br />
+        <input type="submit" name="submit" value="Відправити" />
+        <p>@ViewBag.Message</p>
+    </form>
+

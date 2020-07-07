@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L06_HomeWorkB1", "L06_HomeW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L06_HomeWorkB2", "L06_HomeWorkB2\L06_HomeWorkB2.csproj", "{B52292B7-505C-4ED1-A8F9-3007F50EC09E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L07_ModelBindingAndValidation", "L07_ModelBindingAndValidation\L07_ModelBindingAndValidation.csproj", "{A999987C-5FC5-4534-B2BC-9A13613A24E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{B52292B7-505C-4ED1-A8F9-3007F50EC09E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B52292B7-505C-4ED1-A8F9-3007F50EC09E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B52292B7-505C-4ED1-A8F9-3007F50EC09E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A999987C-5FC5-4534-B2BC-9A13613A24E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A999987C-5FC5-4534-B2BC-9A13613A24E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A999987C-5FC5-4534-B2BC-9A13613A24E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A999987C-5FC5-4534-B2BC-9A13613A24E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
