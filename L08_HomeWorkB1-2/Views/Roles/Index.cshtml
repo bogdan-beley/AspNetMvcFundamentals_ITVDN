@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Microsoft.AspNet.Identity.EntityFramework.IdentityRole>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Roles Listing</h2>
+
+@Html.ActionLink("Create New Role", "Create") | 
+@Html.ActionLink("User List", "UserList")
+<hr />
+<div>
+    @foreach (var role in Model)
+    {
+        <p>
+            <strong>@role.Name | </strong>
+            @Html.ActionLink("Delete", "Delete", new { id = role.Id }, new { style="color:red" })
+            @Html.ActionLink("Edit", "Edit", new { id = role.Id })
+        </p>
+    }
+</div>
+

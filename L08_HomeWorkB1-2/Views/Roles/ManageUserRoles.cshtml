@@ -1,0 +1,29 @@
+﻿@using Microsoft.AspNet.Identity
+@model L08_HomeWorkB1_2.Models.ChangeRoleViewModel
+
+@{
+    ViewBag.Title = "ManageUserRoles";
+}
+
+<h2>ManageUserRoles</h2>
+
+    <form asp-action="ManageUserRoles" method="post">
+        <div class="form-horizontal">
+            <h4>Editing Roles for user @Model.UserEmail</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <input type="hidden" name="userId" value="@Model.UserId" />
+            <div class="form-group">
+                @foreach (var role in Model.AllRoles)
+                {
+                    <input type="checkbox" name="roles" value="@role.Name"
+                           @(Model.UserRoles.Contains(role.Name) ? "checked=\"checked\"" : "") />  @role.Name <br />
+                 }
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+        </form>

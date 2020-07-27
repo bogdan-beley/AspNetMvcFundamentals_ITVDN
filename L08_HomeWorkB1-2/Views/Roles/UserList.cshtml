@@ -1,0 +1,23 @@
+﻿@model IEnumerable<L08_HomeWorkB1_2.Models.ApplicationUser>
+
+@{
+    ViewBag.Title = "UserList";
+}
+
+<h2>User List</h2>
+
+<table class="table">
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>
+                @user.Email
+            </td>
+            <td>
+                @Html.ActionLink("User Roles", "ManageUserRoles", "Roles",
+                    new { userId = user.Id }, new { @class = "btn btn-sm btn-primary" })
+            </td>
+        </tr>
+    }
+</table>
+

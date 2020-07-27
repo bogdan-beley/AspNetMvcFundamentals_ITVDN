@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+        <body>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        @Html.ActionLink("My SHOP", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar">
+                            <ul class="nav nav-pills">
+                                <li>
+                                <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-item nav-link active" })</li>
+                                <li>@Html.ActionLink("Продукти", "Index", "Products", null, new { @class = "nav-item nav-link" })</li>
+                                <li>@Html.ActionLink("Замовлення", "Index", "Orders", null, new { @class = "nav-item nav-link" })</li>
+                                <li>@Html.ActionLink("Admin Panel", "Index", "Roles", null, new { @class = "nav-item nav-link" })</li>
+                                <li>@Html.Partial("_LoginPartial")</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container body-content">
+                @RenderBody()
+                <hr />
+                <footer>
+                    <p>&copy; @DateTime.Now.Year - My SHOP</p>
+                </footer>
+            </div>
+
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @RenderSection("scripts", required: false)
+        </body>
+        </html>
