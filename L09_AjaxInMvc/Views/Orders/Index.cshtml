@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Index";
+
+    var options = new AjaxOptions()
+    {
+        UpdateTargetId = "tabledata",
+        Url = Url.Action("OrdersData"),
+        LoadingElementId = "loadingIndicator",
+        Confirm = "Are you sure you want to continue?"
+    };
+}
+
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@using (Ajax.BeginForm(options))
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Продукт</th>
+                <th>Кількість</th>
+                <th>Сума</th>
+                <th>Дата замовлення</th>
+            </tr>
+        </thead>
+        <tbody id="tabledata">
+            @Html.Action("OrdersData", new { id = Model })
+        </tbody>
+    </table>
+
+    <p>
+        @* How to create SelectList of Products? *@
+        @Html.DropDownList("id", new SelectList(new[] { "All", "Продукт 1", "Продукт 2", "Продукт 3" }, (Model ?? "All")))
+        <input type="submit" value="Фільтрувати" class="btn-primary" /> <img id="loadingIndicator" height="100" style="display:none;" src="@Url.Content("~/Content/spinner-icon-gif-9.gif")" alt="Alternate Text" />
+    </p>
+}
+
+@foreach (string str in new[] { "All", "Продукт 1", "Продукт 2", "Продукт 3" })
+{
+    <div style="margin-right:5px; float:left">
+        @Ajax.ActionLink(str, "OrdersData", new { id = str },
+             new AjaxOptions
+             {
+                 UpdateTargetId = "tabledata",
+                 LoadingElementId = "loadingIndicator"
+             })
+    </div>
+}
+    
+@section scripts {<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>}

@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L08_HomeWorkB1-2", "L08_Hom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{7C7F0765-48B4-4D01-B45D-AC9442184F55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L09_AjaxInMvc", "L09_AjaxInMvc\L09_AjaxInMvc.csproj", "{0DFC3361-AB1F-4B5F-8BFC-CAD80DA9FFD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +173,10 @@ Global
 		{7C7F0765-48B4-4D01-B45D-AC9442184F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C7F0765-48B4-4D01-B45D-AC9442184F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C7F0765-48B4-4D01-B45D-AC9442184F55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DFC3361-AB1F-4B5F-8BFC-CAD80DA9FFD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DFC3361-AB1F-4B5F-8BFC-CAD80DA9FFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DFC3361-AB1F-4B5F-8BFC-CAD80DA9FFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DFC3361-AB1F-4B5F-8BFC-CAD80DA9FFD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
