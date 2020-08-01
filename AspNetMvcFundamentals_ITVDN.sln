@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L09_AjaxInMvc", "L09_AjaxInMvc\L09_AjaxInMvc.csproj", "{0DFC3361-AB1F-4B5F-8BFC-CAD80DA9FFD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L09_HomeWorkA", "L09_HomeWorkA\L09_HomeWorkA.csproj", "{B456BCB3-D360-474B-8065-5515DD077F47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,10 @@ Global
 		{0DFC3361-AB1F-4B5F-8BFC-CAD80DA9FFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DFC3361-AB1F-4B5F-8BFC-CAD80DA9FFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DFC3361-AB1F-4B5F-8BFC-CAD80DA9FFD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B456BCB3-D360-474B-8065-5515DD077F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B456BCB3-D360-474B-8065-5515DD077F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B456BCB3-D360-474B-8065-5515DD077F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B456BCB3-D360-474B-8065-5515DD077F47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

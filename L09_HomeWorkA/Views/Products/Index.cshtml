@@ -1,0 +1,70 @@
+﻿@model IEnumerable<L09_HomeWorkA.Models.Product>
+@{
+    ViewBag.Title = "Index";
+
+    var options = new AjaxOptions()
+    {
+        UpdateTargetId = "productsdata"
+    };
+}
+
+<h2>Products</h2>
+
+@using (Ajax.BeginForm(options))
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Id)</th>
+                <th>@Html.DisplayNameFor(model => model.ProductName)</th>
+            </tr>
+        </thead>
+        <tbody id="productsdata">
+            @Html.Action("AjaxProductsData")
+        </tbody>
+    </table>
+}
+
+@Ajax.ActionLink("1-5", "AjaxProductsData", new { },
+    new AjaxOptions()
+    {
+        Url = Url.Action("JsonProductsData", new { from = 1, to = 5 }),
+        OnSuccess = "ParseResponse",
+        UpdateTargetId = "productsdata",
+        LoadingElementId = "loadingindicator"
+    }, new { @class = "btn btn-primary" })
+@Ajax.ActionLink("6-10", "AjaxProductsData", new { },
+    new AjaxOptions()
+    {
+        Url = Url.Action("JsonProductsData", new { from = 6, to = 10 }),
+        OnSuccess = "ParseResponse",
+        UpdateTargetId = "productsdata",
+        LoadingElementId = "loadingindicator"
+    }, new { @class = "btn btn-primary" })
+@Ajax.ActionLink("11-15", "AjaxProductsData", new { },
+    new AjaxOptions()
+    {
+        Url = Url.Action("JsonProductsData", new { from = 11, to = 15 }),
+        OnSuccess = "ParseResponse",
+        UpdateTargetId = "productsdata",
+        LoadingElementId = "loadingindicator"
+    }, new { @class = "btn btn-primary" })
+<p id="loadingindicator" style="display:none;">Loading...</p>
+
+@section scripts
+{
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+    <script type="text/javascript">
+        function ParseResponse(data) {
+
+            var target = $("#productsdata");
+            target.empty();
+
+            for (var i = 0; i < data.length; i++) {
+                target.append("<tr><td>" + data[i].Id + "</td><td>"
+                    + data[i].ProductName + "</td></tr>");
+            }
+        }
+    </script>
+}
