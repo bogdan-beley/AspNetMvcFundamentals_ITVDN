@@ -8,7 +8,7 @@ namespace L09_HomeWorkB1_2.Models
 {
     public class DatabaseContext : DbContext
     {
-        public DatabaseContext() : base("L09_HomeWorkB1-2") { }
+        public DatabaseContext() : base("L09_HomeWorkB") { }
 
         public DbSet<Order> Orders { get; set; }
         public DbSet<Customer> Customers { get; set; }

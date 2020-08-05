@@ -10,8 +10,8 @@ namespace L09_HomeWorkB1_2.Models
     {
         public int Id { get; set; }
         public decimal Sum { get; set; }
-        public string Product { get; set; }
+        public string Product { get; set; } // filter
         public int? CustomerId { get; set; }
-        public Customer Customer { get; set; }
+        public Customer Customer { get; set; } // filter
     }
 }
